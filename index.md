@@ -16,6 +16,7 @@
 - Instructors :)
 - The course content
 - 1 class per week
+- W No tests 
 - It would be more, but I only had one class!!
 
 
