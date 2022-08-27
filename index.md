@@ -12,11 +12,10 @@
 ```
 
 ### Things that I like from CS193
-```
 - Helpful advices
 - Professors :)
 - It would be more, but I only had one class!!
-```
+
 
 
 
