@@ -23,8 +23,8 @@ const scrollUp = () => {
 	const btnScrollTop = document.querySelector('.scroll-top')
 
 	if (
-		body.scrollTop > 500 ||
-		document.documentElement.scrollTop > 500
+		body.scrollTop > 200 ||
+		document.documentElement.scrollTop > 200
 	) {
 		btnScrollTop.style.display = 'block'
 	} else {
