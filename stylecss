@@ -1,7 +1,3 @@
-/*===============
-  global styles
-===============*/
-
 * {
   padding: 0;
   margin: 0;
@@ -88,10 +84,6 @@ button {
     font-size: 2.6rem;
   }
 }
-
-/*===================
-  buttons and links
-===================*/
 
 .link {
   color: var(--clr-primary);
@@ -194,9 +186,6 @@ button {
   transform: translateY(-5px);
 }
 
-/*========
-  layout
-========*/
 
 .center {
   display: flex;
