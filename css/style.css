@@ -1,0 +1,391 @@
+/*
+Created by Alejandro Griffith
+Do not copy!
+*/
+
+/* General configuration */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    --background: #1b1b1b;
+    --foreground: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    --foreground-bt: #4f64cb;
+    --color: #ffffff;
+}
+
+::-moz-selection {
+    background: var(--color);
+    color: var(--background);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    height: 8em;
+    max-width: 1100px;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    color: var(--foreground-bt);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+}
+
+/* Logo Configuration */
+
+.logo {
+    background: transparent;
+    width: 90px;
+    height: 90px;
+    padding-left: 12px;
+    border: 7px solid #ffffff50;
+    float: left;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: linear-gradient(45deg, #08aeea, #2af598 100%);
+    animation: morph 8s ease-in-out infinite;
+}
+
+.logo-background {
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background-image: linear-gradient(45deg, #fa88ff, #2db2ff 50%, #2bff88 90%);
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* Social media configuration */
+.sm-links {
+    padding: 0 0 0.3em 0;
+    position: relative;
+    color: var(--color);
+}
+
+.sm-links:hover {
+    color: var(--color);
+}
+
+.sm-links::before {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color);
+    width: 0;
+    height: 0.2em;
+    transition: width 0.2s ease-in;
+}
+
+.sm-links:hover::before,
+.sm-links:focus::before {
+    width: 100%;
+}
+
+/* Buttons Configuration */
+.bt {
+    display: block;
+    font-weight: 500;
+    padding: 0.8em 1.4em;
+    transition: transform 0.2s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.bt-border {
+    color: var(--color);
+    border: 2px solid var(--color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bt-border:focus,
+.bt-border:hover {
+    color: var(--background);
+}
+
+.bt-border:before {
+    content: "";
+    position: absolute;
+    background-color: var(--color);
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: right 0.2s ease-in-out;
+}
+
+.bt-border:hover::before,
+.bt-border:focus::before {
+    right: 0;
+}
+
+.bt-normal {
+    text-transform: initial;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
+    border: 0;
+}
+
+.bt-normal:hover {
+    transform: translateY(-4px);
+}
+
+.bt-icon {
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.bt-icon:hover,
+.bt-icon:focus {
+    color: var(--color);
+}
+
+.bt-icon:active {
+    transform: translateY(-5px);
+}
+
+/* Navigation Configuration */
+.nav {
+    color: var(--foreground);
+    font-weight: 500;
+}
+
+.nav-icon {
+    color: var(--foreground);
+    font-size: 1.3rem;
+}
+
+.nav-list {
+    margin-right: 1.5em;
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1.5em;
+}
+
+.nav-iron_bars {
+    display: none;
+    width: 1em;
+}
+
+/* Option Categories */
+.options {
+    margin-top: 4em;
+}
+
+/* About Option */
+.option-ab-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about {
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 0;;
+}
+
+.about-status {
+    margin-top: 1em;
+}
+
+.about-dc {
+    font-size: 1rem;
+    text-justify: auto;
+    max-width: 600px;
+    margin-top: 2.4em;
+}
+
+.about .nav-icon {
+    margin-right: 0.8em;
+}
+
+.about .bt-border {
+    margin-right: 1em;
+}
+
+.about-sm_links {
+    margin-top: 2.4em;
+}
+
+/* Project Option */
+.option-pj-title {
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.projects-container {
+    max-width: 1100px;
+    display: grid;
+    grid-gap: 2em;
+    margin: 0 auto;
+}
+
+
+.project {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+}
+
+.project__description {
+    margin-top: 1em;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+}
+
+.project .nav-icon {
+    margin-left: 0.5em;
+}
+
+/* Footer Configuration */
+.footer {
+    margin-top: 4em;
+    padding: 3em 0;
+    text-align: center;
+}
+
+/* Arrow to Scroll to the top */
+.arrow-scroll {
+    display: none;
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    font-size: 1.8rem;
+    background-color: transparent;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Size adaptive configuration */
+@media (max-width: 600px) {
+    .header {
+        height: 6em;
+    }
+
+    .logo {
+        background: transparent;
+        border: var(--background);
+        animation-play-state: paused;
+    }
+
+    .options {
+        margin-top: 4em;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 4em 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 5em;
+        background-color: var(--background);
+        width: 0;
+        overflow: hidden;
+    }
+
+    .display-nav-list {
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0.5em 0;
+    }
+
+    .nav-iron_bars {
+        display: flex;
+        margin-left: 0.8em;
+    }
+
+    .about {
+        position: center;
+        margin-top: 2em;
+    }
+
+    .footer {
+        padding: 2em;
+        margin-top: 3em;
+    }
+}
