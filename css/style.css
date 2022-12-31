@@ -155,7 +155,7 @@ button {
     width: 100%;
 }
 
-/* Buttons Configuration */
+/* Buttons Configuration
 .bt {
     display: block;
     font-weight: 500;
@@ -216,6 +216,53 @@ button {
 
 .bt-icon:active {
     transform: translateY(-5px);
+}
+*/
+.bt-resume {
+    --border: 4px solid var(--foreground-bt);
+    appearance: none;
+    position: relative;
+    transform: scale(0.85);
+    padding: 0;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0;
+}
+
+.bt-resume span {
+    display: block;
+    position: relative;
+    padding: 1.4em 4em;
+    background: var(--foreground-bt);
+    color: white;
+    border: var(--border);
+    transition: transform 0.2s ease;
+    z-index: 1;
+    will-change: transform;
+}
+
+.bt-resume::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background: white;
+    border: var(--border);
+}
+
+.bt-resume:hover span {
+    transform: translate(-3px, -3px);
+}
+
+.bt-resume:active span {
+    transition: transform 0.05s ease;
+    transform: translate(0,0);
 }
 
 /* Navigation Configuration */
@@ -279,9 +326,9 @@ button {
 .about .bt-border {
     margin-right: 1em;
 }
-
 .about-sm_links {
     margin-top: 2.4em;
+    margin-bottom: 1.2em;
 }
 
 /* Project Option */
@@ -380,9 +427,8 @@ button {
         margin-left: 0.8em;
     }
 
-    .arrow-scroll {
-        padding-top: 3px;
-        padding-right: 3px;
+    .scroll-container {
+        display: none;
     }
 
     .about {
@@ -396,7 +442,7 @@ button {
     }
 }
 
-@media (max-width: 600px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media (max-width:768px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
     .header {
         height: 6em;
     }
@@ -437,9 +483,8 @@ button {
         margin-left: 0.8em;
     }
 
-    .arrow-scroll {
-        padding-top: 3px;
-        padding-right: 3px;
+    .scroll-container {
+        display: none;
     }
 
     .about {
