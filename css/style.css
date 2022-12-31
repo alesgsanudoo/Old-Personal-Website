@@ -396,7 +396,7 @@ button {
     }
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: 600px) {
+@media (max-width: 600px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
     .header {
         height: 6em;
     }
