@@ -1,6 +1,7 @@
 const body = document.body
 
 const iron_bars = document.querySelector('.fa-bars')
+var w = window.innerWidth;
 
 
 const arrowScroll = () => {
