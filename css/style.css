@@ -155,8 +155,8 @@ button {
     width: 100%;
 }
 
-/* Buttons Configuration
-.bt {
+/* Buttons Configuration */
+.bt-nav {
     display: block;
     font-weight: 500;
     padding: 0.8em 1.4em;
@@ -164,60 +164,6 @@ button {
     font-size: 0.9rem;
 }
 
-.bt-border {
-    color: var(--color);
-    border: 2px solid var(--color);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.bt-border:focus,
-.bt-border:hover {
-    color: var(--background);
-}
-
-.bt-border:before {
-    content: "";
-    position: absolute;
-    background-color: var(--color);
-    right: 100%;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: right 0.2s ease-in-out;
-}
-
-.bt-border:hover::before,
-.bt-border:focus::before {
-    right: 0;
-}
-
-.bt-normal {
-    text-transform: initial;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
-    border: 0;
-}
-
-.bt-normal:hover {
-    transform: translateY(-4px);
-}
-
-.bt-icon {
-    padding: 0;
-    font-size: 1.2rem;
-}
-
-.bt-icon:hover,
-.bt-icon:focus {
-    color: var(--color);
-}
-
-.bt-icon:active {
-    transform: translateY(-5px);
-}
-*/
 .bt-resume {
     --border: 4px solid var(--foreground-bt);
     appearance: none;
@@ -289,10 +235,6 @@ button {
 .nav-iron_bars {
     display: none;
     width: 1em;
-}
-
-.nav-iron_bars::after {
-    display: none;
 }
 
 /* Option Categories */
@@ -389,7 +331,6 @@ button {
 }
 
 
-
 /* Size adaptive configuration */
 @media (max-width: 600px) {
     .header {
@@ -414,7 +355,7 @@ button {
         position: absolute;
         right: 0;
         left: 0;
-        top: 8em;
+        top: 7.5em;
         background-color: var(--background);
         width: 0;
         overflow: hidden;

@@ -14,7 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/fd276b5be8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body class="container" id="top">
 <header class="header center">
     <h3>
@@ -27,15 +30,16 @@
     </h3>
     <nav class="nav center">
         <nav class="nav center">
+            <button onclick="toggleEmoji(this)"><a href="#">🇺🇸 EN</a></button>
             <ul class="nav-list center">
                 <li class="nav-item">
-                    <a class="sm-links nav" href="mailto:contact@alesgsanudoo.com"> Contact
+                    <a class="sm-links nav" href="mailto:contact@alesgsanudoo.com" id="nav-contact">Contact
                         <i class="fa-regular fa-envelope"></i>
                     </a>
                 </li>
             </ul>
         </nav>
-        <button type="button" aria-label="toggle navigation" class="bt-resume bt-icon nav-iron_bars">
+        <button type="button" aria-label="toggle navigation" class="bt-nav nav-iron_bars">
             <i aria-hidden="true" class="fas fa-bars"></i>
         </button>
     </nav>
@@ -43,15 +47,13 @@
 
 <main>
     <div class="about center">
-        <h2 class="option-ab-title">About Me</h2>
-        <p class="about-status"> CS Student | Purdue University</p>
-        <p class="about-dc">
-
-            Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.
+        <h2 class="option-ab-title" id="about-title">About Me </h2>
+        <p class="about-status" id="about-status"> CS Student | Purdue University</p>
+        <p class="about-dc" id="about-description">
+            (EN)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.
             Mactis of unizon wordia let selso any; any. The pre othe the hannes,
             whal for oreive the th ementre. In twe alsk ofte of wall obbill avelto wen:
-            Edwedbou Mod Only bects pare qualas thateir shisto dicup theitin brom the offeci.e.”
-
+            Edwedbou Mod Only bects pare qualas thateir shisto dicup theitin brom the offeci.e.
         </p>
         <div class="about-sm_links">
             <a href="https://github.com/alesgsanudoo" aria-label="github" class="sm-links nav-icon">
@@ -64,14 +66,14 @@
         <div>
             <button class="bt-resume">
                 <a href="">
-                    <span>Resume</span>
+                    <span id="about-resume">Resume</span>
                 </a>
             </button>
         </div>
     </div>
     </div>
     <section id="projects" class="options projects">
-        <h2 class="option-pj-title">My Projects</h2>
+        <h2 class="option-pj-title" id="project-title">My Projects</h2>
 
         <div class="projects-container">
             <div class="project">
@@ -118,7 +120,7 @@
 </main>
 
 <footer class="footer">
-    <a href="https://github.com/alesgsanudoo"> <small>&copy; Copyright 2022, Alejandro Griffith</small> </a>
+    <a href="https://github.com/alesgsanudoo"> <small id="footer">&copy; Copyright 2022, Alejandro Griffith</small> </a>
 </footer>
 
 <div class="scroll-container">
@@ -130,5 +132,6 @@
 </div>
 
 <script src="js/utils.js"></script>
+<script src="js/language.js"></script>
 </body>
 </html>
