@@ -291,6 +291,10 @@ button {
     width: 1em;
 }
 
+.nav-iron_bars::after {
+    display: none;
+}
+
 /* Option Categories */
 .options {
     margin-top: 4em;
@@ -385,6 +389,7 @@ button {
 }
 
 
+
 /* Size adaptive configuration */
 @media (max-width: 600px) {
     .header {
@@ -413,10 +418,6 @@ button {
         background-color: var(--background);
         width: 0;
         overflow: hidden;
-    }
-
-    .nav-iron_bars::after {
-        display: none;
     }
 
     .display-nav-list {
