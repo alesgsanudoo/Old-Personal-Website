@@ -415,6 +415,10 @@ button {
         overflow: hidden;
     }
 
+    .nav-iron_bars::after {
+        display: none;
+    }
+
     .display-nav-list {
         width: 100%;
     }
