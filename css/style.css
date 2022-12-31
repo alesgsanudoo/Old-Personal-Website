@@ -339,15 +339,16 @@ button {
 
 
 /* Size adaptive configuration */
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
     .header {
         height: 6em;
     }
 
     .logo {
         background: transparent;
-        border: var(--background);
         animation-play-state: paused;
+        border-radius: 0;
+        border: var(--background);
     }
 
     .options {
@@ -377,6 +378,68 @@ button {
     .nav-iron_bars {
         display: flex;
         margin-left: 0.8em;
+    }
+
+    .arrow-scroll {
+        padding-top: 3px;
+        padding-right: 3px;
+    }
+
+    .about {
+        position: center;
+        margin-top: 2em;
+    }
+
+    .footer {
+        padding: 2em;
+        margin-top: 3em;
+    }
+}
+
+@media (orientation: landscape) {
+    .header {
+        height: 6em;
+    }
+
+    .logo {
+        background: transparent;
+        animation-play-state: paused;
+        border-radius: 0;
+        border: var(--background);
+    }
+
+    .options {
+        margin-top: 4em;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 4em 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 5em;
+        background-color: var(--background);
+        width: 0;
+        overflow: hidden;
+    }
+
+    .display-nav-list {
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 0.5em 0;
+    }
+
+    .nav-iron_bars {
+        display: flex;
+        margin-left: 0.8em;
+    }
+
+    .arrow-scroll {
+        padding-top: 3px;
+        padding-right: 3px;
     }
 
     .about {
