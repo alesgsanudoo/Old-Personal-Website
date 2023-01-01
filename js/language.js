@@ -20,7 +20,11 @@ function toggleLanguage(language) {
     if (language === "Spanish") {
         nav_contact.innerHTML = "Contactar <i class=\"fa-regular fa-envelope\"></i>"
         about_title.innerHTML = "Sobre mí"
-        about_status.innerHTML = " Estudiante de Ingeniería Informática | Purdue University"
+        if (screen.width < 600){
+            about_status.innerHTML = " Ingeniería Informática | Purdue University"
+        } else  {
+            about_status.innerHTML = " Ingeniería Informática | Purdue University"
+        }
         description.innerHTML = "(ES)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
             "            Mactis of unizon wordia let selso any; any. The pre othe the hannes,\n" +
             "            whal for oreive the th ementre. In twe alsk ofte of wall obbill avelto wen:\n" +
