@@ -30,8 +30,3 @@ const selection_device = () => {
 }
 
 iron_bars.addEventListener('click', selection_device)
-
-function hello() {
-    console.log("hello")
-}
-window.onload = hello;
