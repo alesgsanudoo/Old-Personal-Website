@@ -54,7 +54,6 @@ function toggleLanguage(language) {
     let project_title = document.getElementById("project-title")
     let project1_description = document.getElementById("project1-description")
     let footer = document.getElementById("footer")
-    let notfound = document.getElementById("tittle-not-found")
     if (language === "Spanish") {
         nav_contact.innerHTML = "Contactar <i class=\"fa-regular fa-envelope\"></i>"
         about_title.innerHTML = "Sobre mí"
@@ -70,7 +69,6 @@ function toggleLanguage(language) {
         bt_resume.innerHTML = "Currículum"
         project_title.innerHTML = "Mis projectos"
         footer.innerHTML = "&copy; Derechos de Autor 2022, Alejandro Griffith"
-        notfound.innerHTML = " Página no encontrada"
     } else {
         nav_contact.innerHTML = "Contact <i class=\"fa-regular fa-envelope\"></i>"
         about_title.innerHTML = "About Me"
@@ -82,6 +80,5 @@ function toggleLanguage(language) {
         bt_resume.innerHTML = "resume"
         project_title.innerHTML = "My projects"
         footer.innerHTML = "&copy; Copyright 2022, Alejandro Griffith"
-        notfound.innerHTML = "Page not found"
     }
 }
