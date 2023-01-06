@@ -2,16 +2,19 @@ function toggleLanBt(len) {
     if (len === "default" || len == null || len.length === 0) {
         if (localStorage.length === 0) {
             localStorage.setItem("lan", "english")
+            console.log("defualt!!!")
             toggleEmoji(true)
         } else {
             let lan = localStorage.getItem("lan")
             if (lan === "english") {
                 localStorage.removeItem("lan")
                 localStorage.setItem("lan", "english")
+                console.log("eng in bt")
                 toggleEmoji(true)
             } else if (lan === "spanish") {
                 localStorage.removeItem("lan")
                 localStorage.setItem("lan", "spanish")
+                console.log("es in bt")
                 toggleEmoji(true)
             }
         }
@@ -43,6 +46,7 @@ function toggleEmoji(option) {
             language.innerText = "🇺🇸 EN"
         }
     }
+    console.log(localStorage.getItem("lan"))
 }
 
 function toggleLanguage(language) {
