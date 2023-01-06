@@ -2,16 +2,19 @@ function toggleLanBt(len) {
     if (len === "default" || len == null || len.length === 0) {
         if (localStorage.length === 0) {
             localStorage.setItem("lan", "english")
+            console.log("defualt!!!")
             toggleEmoji(true)
         } else {
             let lan = localStorage.getItem("lan")
             if (lan === "english") {
                 localStorage.removeItem("lan")
                 localStorage.setItem("lan", "english")
+                console.log("eng in bt")
                 toggleEmoji(true)
             } else if (lan === "spanish") {
                 localStorage.removeItem("lan")
                 localStorage.setItem("lan", "spanish")
+                console.log("es in bt")
                 toggleEmoji(true)
             }
         }
@@ -43,6 +46,7 @@ function toggleEmoji(option) {
             language.innerText = "🇺🇸 EN"
         }
     }
+    console.log(localStorage.getItem("lan"))
 }
 
 function toggleLanguage(language) {
@@ -62,7 +66,7 @@ function toggleLanguage(language) {
         } else {
             about_status.innerHTML = " Ingeniería Informática | Purdue University"
         }
-        description.innerHTML = "(ES)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
+        description.innerHTML = " (ES)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
             "            Mactis of unizon wordia let selso any; any. The pre othe the hannes,\n" +
             "            whal for oreive the th ementre. In twe alsk ofte of wall obbill avelto wen:\n" +
             "            Edwedbou Mod Only bects pare qualas thateir shisto dicup theitin brom the offeci.e."
