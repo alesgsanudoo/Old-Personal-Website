@@ -92,6 +92,13 @@ h3 {
     font-size: 1.5rem;
 }
 
+h4 {
+    line-height: 1.2;
+    font-size: 2rem;
+    color: var(--foreground-bt);
+    display:inline;
+}
+
 
 button {
     cursor: pointer;
@@ -252,6 +259,30 @@ button {
     text-transform: uppercase;
 }
 
+.option-ab-title span.typed-text {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--foreground-bt);
+}
+.option-ab-title span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.option-ab-title span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
+
 .about {
     flex-direction: column;
     margin-top: 3em;
@@ -318,15 +349,19 @@ button {
 
 /* Footer Configuration */
 .footer {
+    left: 0;
+    bottom: 0;
     margin-top: 4em;
-    padding: 3em 0;
+    margin-bottom: 2em;
+    width: 100%;
     text-align: center;
 }
 
-.footererror {
-    position: fixed;
+.footer_error {
+    position: absolute;
     left: 0;
     bottom: 0;
+    margin-top: 4em;
     margin-bottom: 2em;
     width: 100%;
     text-align: center;

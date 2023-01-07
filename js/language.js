@@ -45,9 +45,9 @@ function toggleEmoji(option) {
     }
 }
 
+
 function toggleLanguage(language) {
     let nav_contact = document.getElementById("nav-contact")
-    let about_title = document.getElementById("about-title")
     let about_status = document.getElementById("about-status")
     let description = document.getElementById("about-description")
     let bt_resume = document.getElementById("about-resume")
@@ -56,7 +56,6 @@ function toggleLanguage(language) {
     let footer = document.getElementById("footer")
     if (language === "Spanish") {
         nav_contact.innerHTML = "Contactar <i class=\"fa-regular fa-envelope\"></i>"
-        about_title.innerHTML = "Sobre mí"
         if (screen.width < 600) {
             about_status.innerHTML = " Ingeniería Informática | Purdue University"
         } else {
@@ -73,7 +72,6 @@ function toggleLanguage(language) {
         footer.innerHTML = "&copy; Derechos de Autor 2022, Alejandro Griffith"
     } else {
         nav_contact.innerHTML = "Contact <i class=\"fa-regular fa-envelope\"></i>"
-        about_title.innerHTML = "About Me"
         about_status.innerHTML = " CS Student | Purdue University"
         description.innerHTML = "(EN)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
             "            Mactis of unizon wordia let selso any; any. The pre othe the hannes,\n" +
