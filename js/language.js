@@ -61,10 +61,7 @@ function toggleLanguage(language) {
         } else {
             about_status.innerHTML = " Ingeniería Informática | Purdue University"
         }
-        description.innerHTML = " (ES)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
-            "            Mactis of unizon wordia let selso any; any. The pre othe the hannes,\n" +
-            "            whal for oreive the th ementre. In twe alsk ofte of wall obbill avelto wen:\n" +
-            "            Edwedbou Mod Only bects pare qualas thateir shisto dicup theitin brom the offeci.e."
+        description.innerHTML = "(ES)Soy un estudiante estudiando Ingeniería Informática en Purdue University. Tengo una profunda pasión por la ingeniería de software y la resolución de problemas, especialmente en el desarrollo de aplicaciones y la programación. Siempre estoy listo para aplicar mis habilidades a nuevos desafíos y busco constantemente oportunidades para mejorar mis capacidades."
         bt_resume.innerHTML = "Currículum (Pronto)"
         project_title.innerHTML = "Mis projectos"
         project1_description.innerHTML = "He desarrollado mutliples servidores de juego\n" +
@@ -73,10 +70,7 @@ function toggleLanguage(language) {
     } else {
         nav_contact.innerHTML = "Contact <i class=\"fa-regular fa-envelope\"></i>"
         about_status.innerHTML = " CS Student | Purdue University"
-        description.innerHTML = "(EN)Anited hipaid outte phrolo. Hisour the lignea thow anetwo by somplat ins this hadmin vels.\n" +
-            "            Mactis of unizon wordia let selso any; any. The pre othe the hannes,\n" +
-            "            whal for oreive the th ementre. In twe alsk ofte of wall obbill avelto wen:\n" +
-            "            Edwedbou Mod Only bects pare qualas thateir shisto dicup theitin brom the offeci.e."
+        description.innerHTML = "(EN)I’m an undergraduate student at Purdue University, majoring in Computer Science. I am deeply passionate about software engineering and problem-solving, particularly in application development and coding. I’m always ready to apply my skills to new challenges and constantly seek opportunities to enhance my abilities further."
         bt_resume.innerHTML = "resume (Soon)"
         project_title.innerHTML = "My projects"
         project1_description.innerHTML = "I help building several gaming communities servers \n" +
